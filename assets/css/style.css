@@ -1,0 +1,295 @@
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Từ tổng quan đến chi tiết
+ */
+
+/* 
+1. Vị trí
+2. Kích thước (width, height)
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, tròn, vuông,...)
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+/* Common Selector */
+.py-8 {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+.px-16 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+.pt-32 {
+    padding-top: 32px !important;
+}
+.pb-32 {
+    padding-bottom: 32px !important;
+}
+
+.my-16 {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+}
+
+.bg-dark {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.opactity-75 {
+    opacity: .75 !important;
+}
+
+.text-light {
+    color: #f1f1f1 !important;
+}
+
+.row {
+    display: flex !important;
+    margin-left: -8px !important;
+    margin-right: -8px !important;
+}
+
+.col {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.col-3 {
+    width: calc(100% / 4) !important;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.btn-light {
+    background-color: #f1f1f1 !important;
+    color: #000 !important;
+}
+.btn-light:hover {
+    background-color: #ccc !important;
+}
+
+.btn-dark {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.btn-dark:hover {
+    background-color: #ccc !important;
+    color: #000 !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    font: inherit;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+}
+
+/* MAIN CONTENT */
+.main {
+    background-color: #fff;
+    width: 1500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+header.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.nav__brand {
+    margin-right: auto;
+    font-size: 16px;
+}
+
+
+.nav__brand,
+.nav__link {
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    padding: 8px 16px;
+    letter-spacing: 4px;
+    float: left;
+}
+
+.nav__brand:hover,
+.nav__link:hover {
+    background-color: #ccc;
+}
+
+/* SLIDER */
+.slider {
+    position: relative;
+}
+
+.slider__img {
+    max-width: 100%;
+}
+
+.slider__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 16px;
+    text-align: center;
+}
+
+.slider__content-heading {
+    letter-spacing: 4px;
+    color: #fff;
+    margin: 10px 0;
+    font-size: 36px;
+    font-weight: 400;
+    text-shadow: 0 2px 5px #000;
+}
+
+/* CONTENT */
+.content {
+    padding: 8px 16px;
+}
+
+.section {
+    padding-top: 32px;
+    width: 1564px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.section__heading {
+    padding: 16px 0;
+    margin: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section__desc {
+    margin: 15px 0;
+}
+
+/* Project section */
+.project {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.project__img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.project__title {
+    position: absolute;
+    top: 0;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Member section */
+.member-list {
+    margin: 32px 0;
+}
+
+.member {
+    margin-bottom: 15px;
+    filter: grayscale(75%);
+}
+
+.member__img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.member__name {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0;
+}
+
+.member__position {
+    margin: 15px 0;
+    opacity: .6;
+}
+
+.member__desc {
+    margin: 15px 0;
+}
+
+/* Map section */
+.map-section img {
+    width: 100%;
+    padding-top: 32px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.footer__copyright {
+    padding: 32px 0;
+    text-align: center;
+}
+
+.footer__copyright a {
+    color: #fff;
+}
+
+.footer__copyright a:hover {
+    color: #4CAF50;
+}

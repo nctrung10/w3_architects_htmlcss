@@ -1,0 +1,36 @@
+/* Mobile: width < 740px (739px) */
+@media screen and (max-width: 46.1875em) {
+    .d-sm-none {
+        display: none !important;
+    }
+
+    .nav__list {
+        display: none !important;
+    }
+
+    .row {
+        flex-direction: column !important;
+    }
+    .col-sm-12 {
+        width: 100% !important;
+    }
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 63.9375em) {
+    .member {
+        margin-bottom: 32px;
+    }
+}
+
+/* Tablet: width >= 740px and width < 1024px (1023px) */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .row {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+    }
+    .col-md-6 {
+        width: 50% !important;
+
+    }
+}
