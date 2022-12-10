@@ -116,6 +116,7 @@ html, body {
     margin-bottom: 16px;
 }
 
+
 /* MAIN CONTENT */
 .main {
     background-color: #fff;
@@ -140,6 +141,7 @@ header.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 8px 16px;
 }
 
@@ -147,7 +149,6 @@ header.header {
     margin-right: auto;
     font-size: 16px;
 }
-
 
 .nav__brand,
 .nav__link {
@@ -162,6 +163,20 @@ header.header {
 .nav__brand:hover,
 .nav__link:hover {
     background-color: #ccc;
+}
+
+.nav__btn {
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+.nav__list.show {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-top: 8px;
 }
 
 /* SLIDER */

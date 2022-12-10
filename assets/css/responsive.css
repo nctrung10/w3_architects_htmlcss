@@ -3,17 +3,26 @@
     .d-sm-none {
         display: none !important;
     }
-
-    .nav__list {
-        display: none !important;
-    }
-
     .row {
         flex-direction: column !important;
     }
     .col-sm-12 {
         width: 100% !important;
     }
+
+    /* Navbar */
+    .nav__btn {
+        display: block;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .nav__link {
+        padding: 10px 16px;
+    }
+
 }
 
 /* Tablet & Mobile */
