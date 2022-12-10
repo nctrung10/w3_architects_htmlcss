@@ -171,6 +171,7 @@ header.header {
 
 .slider__img {
     max-width: 100%;
+    vertical-align: middle;
 }
 
 .slider__content {
