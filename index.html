@@ -188,23 +188,38 @@
         </footer>
     </div>
 
+
     <!-- Javascript -->
     <script>
+        /* Navbar Mobile */
         const btn = document.getElementById('navMobileBtn')
         const navList = document.querySelector('.nav__list')
         const overlay = document.querySelector('.overlay')
         
+        // Show overlay and navbar
         btn.onclick = () => {
             if (!navList.classList.contains('show')) {
                 navList.classList.add('show')
+                overlay.classList.add('show')
             } else {
                 navList.classList.remove('show')
+                overlay.classList.remove('show')
             }
         }
 
+        // Auto hidden overlay and navbar when clicked
         navList.onclick = () => {
-            navList.classList.contains('show') && navList.classList.remove('show')
+            if (navList.classList.contains('show')) {
+                navList.classList.remove('show')
+                overlay.classList.remove('show')
+            }
         }
+
+        // Hidden overlay when it is clicked on
+        overlay.addEventListener('click', function() {
+            this.classList.remove('show')
+            navList.classList.remove('show')
+        })
     </script>
 </body>
 
